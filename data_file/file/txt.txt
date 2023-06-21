@@ -1,0 +1,27 @@
+1. Install Android studio
+2. Install appium
+3. Setup JAVA_HOME variable
+4. Setup ANDROID_HOME variable
+5. Connect mobile with Laptop via cable, turn developer mode and allow ADB
+6. Open cmd, type "adb devices"
+7. Open appium
+8. Click start server
+9. Add file Json to config (at the bottom right)
+ 
+* file Json * [sửa platformVersion và deviceName phù hợp]
+
+{
+  "platformName": "Android",
+  "platformVersion": "9.0",
+  "deviceName": "Galaxy S7 edge",
+  "noReset": "True",
+  "autoGrantPermissions": "True",
+  "appPackage": "com.whatsapp",
+  "appActivity": "com.whatsapp.HomeActivity"
+}
+
+10. Click start session
+
+* NOTE * 
+Double check: deviceName, platformVersion nha mn :v
+
